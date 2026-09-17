@@ -5,7 +5,13 @@ function theme_setup()
     // Tells WordPress to automatically generate the <title> tag for you
     add_theme_support('title-tag');
 
+    // Enable support for Post Thumbnails on posts and pages
     add_theme_support('post-thumbnails');
+
+    // Register navigation menus
+    register_nav_menus(array(
+        'primary-menu' => 'Primary Header Menu',
+    ));
 }
 
 // Hook this into 'after_setup_theme'

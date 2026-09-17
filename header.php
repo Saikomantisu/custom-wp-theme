@@ -22,7 +22,14 @@
         </div>
 
         <nav class="site-navigation">
-            <!-- Your WordPress menu function would go here -->
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary-menu', // Must match the slug from functions.php
+                'container'      => false,          // Removes the extra <div> wrapper around the <ul>
+                'menu_class'     => 'nav-list',     // Adds a CSS class to the <ul> element
+                'fallback_cb'    => false           // Hides the menu completely if no menu is assigned in the dashboard
+            ));
+            ?>
         </nav>
     </header>
 
