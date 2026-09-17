@@ -82,6 +82,7 @@ header {
     color: var(--theme-bg);
     padding: 20px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .site-branding>h1>a {
