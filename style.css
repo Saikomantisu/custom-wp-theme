@@ -122,3 +122,22 @@ article>h1 {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.feature-list {
+    margin-top: 25px;
+    display: grid;
+}
+
+.feature-card {
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+}
+
+.feature-card h2 {
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    margin-bottom: 12px;
+}
